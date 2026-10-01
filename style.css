@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef5fb;
+    color: #17365d;
+}
+
+
+/* Header */
+
+header {
+    background-color: #234f87;
+    color: white;
+    padding: 25px 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin: 0;
+    font-style: italic;
+}
+
+
+/* Main */
+
+main {
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.intro {
+    text-align: center;
+    color: #536b88;
+    margin-bottom: 30px;
+}
+
+
+/* Form */
+
+form {
+    background-color: white;
+    padding: 35px;
+
+    border: 1px solid #c9d9ea;
+    border-radius: 8px;
+}
+
+.form-row {
+    display: flex;
+    gap: 25px;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 25px;
+}
+
+
+/* Labels */
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* Inputs */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 2px solid #cbd9e8;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* Radio Buttons and Checkboxes */
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.options label {
+    font-weight: normal;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+}
+
+.options input {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* Buttons */
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    padding: 14px 50px;
+
+    margin: 5px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #1976d2;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #125da5;
+}
+
+
+/* Reset Button */
+
+.reset {
+    background-color: #e7edf4;
+
+    color: #17365d;
+
+    border: 1px solid #c5d3e1;
+}
+
+.reset:hover {
+    background-color: #d5e0eb;
+}
+
+
+/* Footer */
+
+footer {
+    max-width: 1050px;
+
+    margin: auto;
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: #637b97;
+
+    border-top: 1px solid #c9d9ea;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .form-row {
+        display: block;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .options {
+        display: block;
+    }
+
+    .options label {
+        margin-bottom: 12px;
+    }
+}

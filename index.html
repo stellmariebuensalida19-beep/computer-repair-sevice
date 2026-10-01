@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Computer Repair Service Request</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🔧 Computer Repair Service Request</h1>
+        <p>Fast • Reliable • Professional</p>
+    </header>
+
+    <main>
+
+        <h2>Request a Repair Service</h2>
+
+        <p class="intro">
+            Please fill out the form below to request a computer repair service.
+            We will get back to you as soon as possible.
+        </p>
+
+        <form>
+
+            <!-- Customer Information -->
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="name">Customer Name *</label>
+
+                    <input type="text"
+                           id="name"
+                           placeholder="Enter your full name"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+
+                    <input type="email"
+                           id="email"
+                           placeholder="you@example.com"
+                           required>
+                </div>
+
+            </div>
+
+
+            <!-- Contact and Device -->
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="contact">Contact Number *</label>
+
+                    <input type="tel"
+                           id="contact"
+                           placeholder="e.g. 0917 123 4567"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="device">Device Type *</label>
+
+                    <select id="device" required>
+
+                        <option value="">
+                            Select device type
+                        </option>
+
+                        <option>
+                            Desktop Computer
+                        </option>
+
+                        <option>
+                            Laptop
+                        </option>
+
+                        <option>
+                            Printer
+                        </option>
+
+                        <option>
+                            Tablet
+                        </option>
+
+                    </select>
+                </div>
+
+            </div>
+
+
+            <!-- Preferred Service -->
+            <div class="form-group">
+
+                <label>Preferred Service *</label>
+
+                <div class="options">
+
+                    <label>
+                        <input type="radio"
+                               name="service"
+                               required>
+                        Hardware Repair
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="service">
+                        Software Repair
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="service">
+                        Virus Removal
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="service">
+                        System Upgrade
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- Priority and Additional Services -->
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>Service Priority *</label>
+
+                    <div class="options">
+
+                        <label>
+                            <input type="radio"
+                                   name="priority"
+                                   required>
+                            Normal
+                        </label>
+
+                        <label>
+                            <input type="radio"
+                                   name="priority">
+                            Urgent
+                        </label>
+
+                        <label>
+                            <input type="radio"
+                                   name="priority">
+                            Emergency
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Additional Services</label>
+
+                    <div class="options">
+
+                        <label>
+                            <input type="checkbox">
+                            Data Backup
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Computer Cleaning
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Software Installation
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Preferred Date -->
+            <div class="form-group">
+
+                <label for="date">
+                    Preferred Date *
+                </label>
+
+                <input type="date"
+                       id="date"
+                       required>
+
+            </div>
+
+
+            <!-- Problem Description -->
+            <div class="form-group">
+
+                <label for="problem">
+                    Problem Description *
+                </label>
+
+                <textarea id="problem"
+                          rows="6"
+                          placeholder="Please describe the problem with your device..."
+                          required></textarea>
+
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <button type="submit">
+                    Submit
+                </button>
+
+                <button type="reset"
+                        class="reset">
+                    Reset
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p>Thank you for choosing our service!</p>
+    </footer>
+
+</body>
+</html>
